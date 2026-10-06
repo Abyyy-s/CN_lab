@@ -1,0 +1,11 @@
+# Compiled executables and binaries
+server
+client
+a.out
+*.o
+*.out
+
+# Word temp files and OS files
+~$*
+.DS_Store
+Thumbs.db
