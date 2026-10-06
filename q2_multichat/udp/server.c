@@ -143,3 +143,96 @@ int main() {
     close(sockfd);
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+================================================================================
+ALGORITHM (UDP Server)
+================================================================================
+
+UDP — General Algorithm
+UDP Server:
+1. Start.
+2. Create a socket using socket().
+3. Assign IP address and port number using bind().
+4. Receive data from the client using recvfrom().
+5. Process the received data.
+6. Send the result back using sendto().
+7. Close the socket.
+8. Stop.
+
+--------------------------------------------------------------------------------
+Program-Specific Steps: Multi-user Chat Server
+--------------------------------------------------------------------------------
+1. Start.
+2. Create a UDP socket using socket(AF_INET, SOCK_DGRAM, 0).
+3. Assign local IP address (INADDR_ANY) and designated port number using bind().
+4. Receive data from the client: Incoming connection requests and chat messages from multiple clients using recvfrom().
+5. Process the received data: Use select() to multiplex I/O. Maintain list of active clients and broadcast each incoming message to all other connected clients.
+6. Send the result back to the client: Broadcast messages sent to all other connected clients using sendto().
+7. Close the UDP socket using close().
+8. Stop.
+
+--------------------------------------------------------------------------------
+Companion Algorithm (UDP Client — for lab record reference)
+--------------------------------------------------------------------------------
+UDP Client:
+1. Start.
+2. Create a socket using socket().
+3. Specify the server IP address and port number.
+4. Read/input the required data.
+5. Send data to the server using sendto().
+6. Receive the result using recvfrom().
+7. Display the result.
+8. Close the socket.
+9. Stop.
+================================================================================
+*/

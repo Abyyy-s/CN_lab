@@ -38,3 +38,97 @@ int main() {
     close(sockfd);
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+================================================================================
+ALGORITHM (UDP Client)
+================================================================================
+
+UDP — General Algorithm
+UDP Client:
+1. Start.
+2. Create a socket using socket().
+3. Specify the server IP address and port number.
+4. Read/input the required data.
+5. Send data to the server using sendto().
+6. Receive the result using recvfrom().
+7. Display the result.
+8. Close the socket.
+9. Stop.
+
+--------------------------------------------------------------------------------
+Program-Specific Steps: Palindrome Check (String / Number)
+--------------------------------------------------------------------------------
+1. Start.
+2. Create a UDP socket using socket(AF_INET, SOCK_DGRAM, 0).
+3. Specify server IP address ("127.0.0.1") and designated port number.
+4. Read/input required data from user: String or number entered by user.
+5. Send the data to the server: Send input string to server using sendto().
+6. Receive the result back from the server using recvfrom().
+7. Display the received result: Display palindrome verification result received from server.
+8. Close the UDP socket using close().
+9. Stop.
+
+--------------------------------------------------------------------------------
+Companion Algorithm (UDP Server — for lab record reference)
+--------------------------------------------------------------------------------
+UDP Server:
+1. Start.
+2. Create a socket using socket().
+3. Assign IP address and port number using bind().
+4. Receive data from the client using recvfrom().
+5. Process the received data.
+6. Send the result back using sendto().
+7. Close the socket.
+8. Stop.
+================================================================================
+*/

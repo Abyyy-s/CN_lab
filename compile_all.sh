@@ -1,6 +1,6 @@
 #!/bin/bash
 # ─────────────────────────────────────────────────────────────
-#  Compile All Lab Programs
+#  Compile All Lab Programs (54 programs in total)
 #  Usage: bash compile_all.sh
 # ─────────────────────────────────────────────────────────────
 
@@ -21,11 +21,11 @@ compile() {
     fi
 }
 
-echo "=== Compiling Q1 Matrix (TCP) ==="
+echo "=== Compiling Q1 Matrix Type (TCP) ==="
 compile q1_matrix/tcp server.c server
 compile q1_matrix/tcp client.c client
 
-echo "=== Compiling Q1 Matrix (UDP) ==="
+echo "=== Compiling Q1 Matrix Type (UDP) ==="
 compile q1_matrix/udp server.c server
 compile q1_matrix/udp client.c client
 
@@ -37,9 +37,21 @@ echo "=== Compiling Q1 Matrix Addition (UDP) ==="
 compile q1_matrix_addition/udp server.c server
 compile q1_matrix_addition/udp client.c client
 
+echo "=== Compiling Q1 Matrix Multiplication (TCP) ==="
+compile q1_matrix_multiply/tcp server.c server
+compile q1_matrix_multiply/tcp client.c client
+
+echo "=== Compiling Q1 Matrix Multiplication (UDP) ==="
+compile q1_matrix_multiply/udp server.c server
+compile q1_matrix_multiply/udp client.c client
+
 echo "=== Compiling Q2 Multichat (TCP) ==="
 compile q2_multichat/tcp server.c server
 compile q2_multichat/tcp client.c client
+
+echo "=== Compiling Q2 Multichat (UDP) ==="
+compile q2_multichat/udp server.c server
+compile q2_multichat/udp client.c client
 
 echo "=== Compiling Q3 DateTime (TCP) ==="
 compile q3_datetime/tcp server.c server
@@ -118,6 +130,6 @@ compile q12_factorial/udp server.c server
 compile q12_factorial/udp client.c client
 
 echo ""
-echo "─────────────────────────────────"
-echo "  PASSED: $PASS    FAILED: $FAIL"
-echo "─────────────────────────────────"
+echo "─────────────────────────────────────────"
+echo "  TOTAL PASSED: $PASS    TOTAL FAILED: $FAIL"
+echo "─────────────────────────────────────────"

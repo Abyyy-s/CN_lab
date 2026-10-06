@@ -55,3 +55,103 @@ int main() {
     close(server_fd);
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+================================================================================
+ALGORITHM (TCP Server)
+================================================================================
+
+TCP — General Algorithm
+TCP Server:
+1. Start.
+2. Create a socket using socket().
+3. Assign IP address and port number using bind().
+4. Wait for client connection using listen().
+5. Accept the client connection using accept().
+6. Receive data from the client using recv()/read().
+7. Process the received data.
+8. Send the result back using send()/write().
+9. Close the client socket.
+10. Close the server socket.
+11. Stop.
+
+--------------------------------------------------------------------------------
+Program-Specific Steps: Fibonacci Series Generation
+--------------------------------------------------------------------------------
+1. Start.
+2. Create a TCP socket using socket(AF_INET, SOCK_STREAM, 0).
+3. Assign local IP address (INADDR_ANY) and designated port number using bind().
+4. Put the server into listening mode to wait for client connections using listen().
+5. Accept an incoming client connection using accept().
+6. Receive data from the client: Integer N (number of terms requested) using recv().
+7. Process the received data: Compute first N Fibonacci numbers using iterative recurrence: fib[0]=0, fib[1]=1, fib[i]=fib[i-1]+fib[i-2].
+8. Send the result back to the client: Array containing first N Fibonacci numbers using send().
+9. Close the active client connection socket using close().
+10. Close the server listening socket using close().
+11. Stop.
+
+--------------------------------------------------------------------------------
+Companion Algorithm (TCP Client — for lab record reference)
+--------------------------------------------------------------------------------
+TCP Client:
+1. Start.
+2. Create a socket using socket().
+3. Specify the server IP address and port number.
+4. Establish connection using connect().
+5. Read/input the required data.
+6. Send data to the server using send()/write().
+7. Receive the result using recv()/read().
+8. Display the result.
+9. Close the socket.
+10. Stop.
+================================================================================
+*/

@@ -1,0 +1,50 @@
+TCP — General Algorithm
+TCP Server
+Start.
+Create a socket using socket().
+Assign IP address and port number using bind().
+Wait for client connection using listen().
+Accept the client connection using accept().
+Receive data from the client using recv()/read().
+Process the received data.
+Send the result back using send()/write().
+Close the client socket.
+Close the server socket.
+Stop.
+
+
+TCP Client
+Start.
+Create a socket using socket().
+Specify the server IP address and port number.
+Establish connection using connect().
+Read/input the required data.
+Send data to the server using send()/write().
+Receive the result using recv()/read().
+Display the result.
+Close the socket.
+Stop.
+
+
+UDP — General Algorithm
+UDP Server
+Start.
+Create a socket using socket().
+Assign IP address and port number using bind().
+Receive data from the client using recvfrom().
+Process the received data.
+Send the result back using sendto().
+Close the socket.
+Stop.
+
+
+UDP Client
+Start.
+Create a socket using socket().
+Specify the server IP address and port number.
+Read/input the required data.
+Send data to the server using sendto().
+Receive the result using recvfrom().
+Display the result.
+Close the socket.
+Stop.
