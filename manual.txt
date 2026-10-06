@@ -1,0 +1,18 @@
+1) *matrix multiplictaion
+  *To implement a TCP client-server program where the client sends a randomly generated square matrix to the server, and the server determines its type (upper triangular, lower triangular, or diagonal).
+   *matrix addition (whole 1 udp and tcp) total  3
+
+2) multichat (udp and tcp)
+3) concurrent date and time (udp )
+4) abbrevation (udp)
+5) fibinacci
+6) palindrome (string or number)
+7) prime or composite
+8) odd or even
+9) average of three num
+10)sum of n numbers
+11)string reverse  
+12)factorial
+ qns 5 to 12 impliment these logic in qn 1 style (To implement a TCP client-server pr....)
+  both udp and tcp pgmmust be there each of client anmd server programs for ecagh udp and tcp 
+
